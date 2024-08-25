@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align content to the left */
+}
+
+.title {
+    font-size: 20px;
+    color: #FF0066;
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+}
+
+.offer {
+    padding: 15px;
+    border: 2px solid #ffcccc;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    text-align: left; /* Align text to the left */
+}
+
+.offer.selected {
+    border-color: #FF0066;
+}
+
+.offer-label {
+    background-color: #FF0066;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    font-size: 12px;
+}
+
+.price {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px; /* Smaller font size */
+    font-weight: bold; /* Bold text */
+}
+
+.reduced {
+    font-size: 12px;
+    color: grey;
+}
+
+.most-popular {
+    background-color: #FF0066;
+    color: white;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.product-options {
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Style for option groups */
+.option-group {
+    display: flex;
+    gap: 20px; /* Space between size and color dropdowns */
+    margin-bottom: 10px;
+}
+
+/* Style for individual options within option groups */
+.option {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+/* Style for labels to align with dropdowns */
+.option label {
+    margin-bottom: 5px;
+}
+
+/* Ensure dropdowns are not too wide */
+select {
+    width: 100px; /* Adjust width as needed */
+    padding: 5px; /* Optional: add some padding for better appearance */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Hide product options initially */
+.hidden {
+    display: none;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.delivery {
+    color: #FF0066;
+    font-style: italic;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.total-price {
+    font-weight: bold;
+    margin: 0;
+    font-size: 14px;
+}
+
+.add-to-cart {
+    background-color: #FF0066;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make button full width of its container */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.add-to-cart:hover {
+    background-color: #e6005c;
+}
+
+.powered-by {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Align radio buttons and labels to the left */
+.offer input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and text */
+    vertical-align: middle; /* Aligns radio button vertically with text */
+    appearance: none; /* Remove default radio button style */
+    background-color: #fff; /* White background for radio button */
+    border: 2px solid #ccc; /* Gray border for radio button */
+    border-radius: 500%; /* Round shape for radio button */
+    width: 20px; /* Size of radio button */
+    height: 20px; /* Size of radio button */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: relative;
+}
+
+.offer input[type="radio"]:checked {
+    border-color: #FF0066; /* Pink border for checked state */
+}
+
+.offer input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF0066; /* Pink color for checked state */
+}
+.offer label {
+    display: inline-block;
+    vertical-align: middle; /* Aligns text vertically with radio button */
+}
+
+
